@@ -1,0 +1,3 @@
+[submodule "public/templates/gentelella"]
+	path = public/templates/gentelella
+	url = https://github.com/mwlang/gentelella-rails
