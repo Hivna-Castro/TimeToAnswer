@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     get 'welcome/index'
   end
   namespace :admins_backoffice do
-    resources :admins, exceptions: [:delete]
+    resources :admins
     get 'welcome/index'
   end
 
