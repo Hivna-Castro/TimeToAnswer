@@ -11,7 +11,7 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
   end
 
   def create
-   @subject = Admin.new(params_subject)
+   @subject = Subject.new(params_subject)
     if @subject.save
       redirect_to admins_backoffice_subjects_path, notice: "Assunto/Área cadastrado com sucesso!"
     else
@@ -32,7 +32,7 @@ class AdminsBackoffice::SubjectsController < AdminsBackofficeController
 
   def destroy
     if @subject.destroy
-      redirect_to admins_backoffice_aubjects_path, notice: "Assunto/Área excluído com sucesso!"
+      redirect_to admins_backoffice_subjects_path, notice: "Assunto/Área excluído com sucesso!"
     else
       render :index
     end
