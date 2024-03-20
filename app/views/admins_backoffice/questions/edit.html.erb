@@ -1,5 +1,8 @@
-<h1> Editando </h1>
+<h1>Perguntas</h1>
 
 <ul>
-    <li><%= @subject.description %></li>
+  <% @questions.each do |question| %>
+    <li><%= question.description.truncate(50) %></li>
+    <li><%= question.subject.description.truncate(30) %></li>
+  <% end %>
 </ul>
