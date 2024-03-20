@@ -54,7 +54,7 @@
 
               <!-- Nav Item - Dashboard -->
               <li class="nav-item">
-                    <%= link_to admins_backoffice_admins_path do %>
+                    <%= link_to admins_backoffice_welcome_index_path do %>
                         <i class="fas fa-fw fa-tachometer-alt"></i> Dashboard
                     <% end %>
               </li>
@@ -70,6 +70,12 @@
                         <i class="fa fa-user"></i> Assuntos/Áreas
                     <% end %>
                </li>
+
+                <li class="nav-item">
+                    <%= link_to admins_backoffice_questions_path do %>
+                        <i class="fa fa-user"></i> Questões
+                    <% end %>
+                </li>
 
               <!-- Divider -->
               <hr class="sidebar-divider">
